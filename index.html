@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Components</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Вкладки -->
+    <div class="tabs-container">
+        <div class="tabs">
+            <button class="tab-link active" data-tab="tab1">🏠 Главная</button>
+            <button class="tab-link" data-tab="tab2">📂 О нас</button>
+            <button class="tab-link" data-tab="tab3">📞 Контакты</button>
+        </div>
+        <div class="tab-content active" id="tab1">
+            <h2>Главная страница</h2>
+            <p>Добро пожаловать на сайт!</p>
+        </div>
+        <div class="tab-content" id="tab2">
+            <h2>О нас</h2>
+            <p>Мы создаем современные UI-компоненты с jQuery.</p>
+        </div>
+        <div class="tab-content" id="tab3">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами по почте info@example.com.</p>
+        </div>
+    </div>
+
+    <!-- Попап -->
+    <button id="openPopup" class="btn">Открыть окно</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Модальное окно</h2>
+            <p>Это улучшенное модальное окно с плавной анимацией.</p>
+        </div>
+    </div>
+
+    <!-- Аккордеон -->
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">📌 Вопрос 1</button>
+            <div class="accordion-content">Ответ на вопрос 1.</div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">📌 Вопрос 2</button>
+            <div class="accordion-content">Ответ на вопрос 2.</div>
+        </div>
+    </div>
+
+</body>
+</html>
